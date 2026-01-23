@@ -5,6 +5,8 @@ preview = ["pixi-build"]
 
 [dependencies]
 autopilot = { path = "." }
+xtb = ">=6.7.1"
+crest = ">=3.0.2"
 
 [package]
 name = "autopilot"
@@ -27,6 +29,7 @@ pytest-cov = "*"
 lefthook = "*"
 rattler-build = "*"
 tbump = "*"
+ipykernel = "*"
 
 [feature.docs.dependencies]
 sphinx = "*"
