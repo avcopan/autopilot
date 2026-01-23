@@ -37,9 +37,18 @@ myst-parser = "*"
 pydata-sphinx-theme = "*"
 sphinx-autodoc2 = "*"
 
+[feature.local.pypi-dependencies]
+automol = { path = "../automol", editable = true }
+autostore = { path = "../autostore", editable = true }
+
+[feature.local.pypi-options.dependency-overrides]
+automol = { path = "../automol", editable = true }
+autostore = { path = "../autostore", editable = true }
+
 [environments]
 default = { solve-group = "default" }
 dev = { features = ["dev", "docs"], solve-group = "default"}
+dev-local = { features = ["dev", "docs", "local"], solve-group = "default"}
 
 [feature.dev.tasks]
 # Manage pyproject.toml with uv
