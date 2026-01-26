@@ -56,8 +56,8 @@ root_package = "autopilot"
 name = "Module Layering"
 type = "layers"
 layers = [
-    "autopilot.layer2",
-    "autopilot.layer1",
+    "autopilot.calc",
+    "autopilot.qc",
 ]
 
 # Pytest configurations

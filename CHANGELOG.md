@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 ### Added
-- See example format below...
+- Basic energy calculation via QCIO
 
 ## [0.0.0] - YYYY-MM-DD
 
