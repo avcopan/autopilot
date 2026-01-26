@@ -4,6 +4,7 @@ version = "0.0.0"
 authors = [{name = "Andreas V. Copan", email = "avcopan@uga.edu"}]
 requires-python = ">= 3.12"
 dependencies = [
+    "automol>=0.0.1",
     "geometric>=1.1",
     "qccodec>=0.9.1",
     "qcio>=0.16.2",
@@ -38,6 +39,9 @@ ignore = [
 convention = "numpy"
 
 # Ty configurations
+[tool.ty.environment]
+python = ".pixi/envs/dev/bin/python"
+
 [tool.ty.src]
 include = [
     "src",

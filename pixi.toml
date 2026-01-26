@@ -1,12 +1,18 @@
 [workspace]
-channels = ["conda-forge"]
+channels = ["conda-forge", "avcopan"]
 platforms = ["linux-64", "osx-64", "osx-arm64"]
 preview = ["pixi-build"]
 
 [dependencies]
 autopilot = { path = "." }
-xtb = ">=6.7.1"
+automol = ">=0.0.1"
 crest = ">=3.0.2"
+xtb = ">=6.7.1"
+
+[pypi-dependencies]
+qccodec = "*"
+qcio = "*"
+qcop = "*"
 
 [package]
 name = "autopilot"
@@ -48,7 +54,7 @@ autostore = { path = "../autostore", editable = true }
 [environments]
 default = { solve-group = "default" }
 dev = { features = ["dev", "docs"], solve-group = "default"}
-dev-local = { features = ["dev", "docs", "local"], solve-group = "default"}
+dev-local = { features = ["dev", "docs", "local"] }
 
 [feature.dev.tasks]
 # Manage pyproject.toml with uv
