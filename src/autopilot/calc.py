@@ -1,13 +1,19 @@
-"""Single-point calculations."""
+"""Calculations.
+
+These functions perform quantum chemistry calculations and return QCIO Results objects.
+They do not interact with the database.
+"""
 
 import qcop
 from automol import Geometry
-from qcio import CalcType, ProgramArgs, ProgramInput
+from qcio import CalcType, ProgramArgs, ProgramInput, Results, SinglePointData
 
-from .. import qc
+from . import qc
 
 
-def energy(geo: Geometry, prog: str, args: ProgramArgs | dict[str, object]) -> float:
+def energy(
+    geo: Geometry, prog: str, args: ProgramArgs | dict[str, object]
+) -> Results[ProgramInput, SinglePointData]:
     """
     Compute single-point energy.
 
@@ -35,10 +41,4 @@ def energy(geo: Geometry, prog: str, args: ProgramArgs | dict[str, object]) -> f
         structure=qc.structure.from_geometry(geo),
         **args.model_dump(),
     )
-    res = qcop.compute(prog, inp)
-
-    if not res.success:
-        msg = f"Calculation failed: {res.traceback}"
-        raise RuntimeError(msg)
-
-    return res.data.energy
+    return qcop.compute(prog, inp)
