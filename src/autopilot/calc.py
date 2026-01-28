@@ -6,9 +6,8 @@ They do not interact with the database.
 
 import qcop
 from automol import Geometry
+from autostore import qc
 from qcio import CalcType, ProgramArgs, ProgramInput, Results, SinglePointData
-
-from . import qc
 
 
 def energy(

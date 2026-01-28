@@ -5,7 +5,7 @@ authors = [{name = "Andreas V. Copan", email = "avcopan@uga.edu"}]
 requires-python = ">= 3.12"
 dependencies = [
     "automol>=0.0.1",
-    "automech-autostore>=0.0.1",
+    "automech-autostore>=0.0.2",
     "geometric>=1.1",
     "qcio>=0.16.2",
     "qcop>=0.12.1",
@@ -56,8 +56,8 @@ root_package = "autopilot"
 name = "Module Layering"
 type = "layers"
 layers = [
+    "autopilot.api",
     "autopilot.calc",
-    "autopilot.qc",
 ]
 
 # Pytest configurations
