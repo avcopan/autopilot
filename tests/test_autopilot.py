@@ -7,7 +7,7 @@ import pytest
 from automol import Geometry
 from autostore import Database
 
-from autopilot import api
+import autopilot
 
 
 @pytest.fixture
@@ -30,7 +30,7 @@ def water() -> Geometry:
 
 def test_energy(water: Geometry, database: Database) -> None:
     """Test single-point energy calculation."""
-    energy = api.energy(
+    energy = autopilot.energy(
         water, prog="crest", args={"model": {"method": "gfn2"}}, db=database
     )
     assert np.isclose(energy, -5.062316802835694)

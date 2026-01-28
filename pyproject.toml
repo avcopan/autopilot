@@ -56,7 +56,7 @@ root_package = "autopilot"
 name = "Module Layering"
 type = "layers"
 layers = [
-    "autopilot.api",
+    "autopilot.core",
     "autopilot.calc",
 ]
 
