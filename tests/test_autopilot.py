@@ -5,7 +5,7 @@ from collections.abc import Iterator
 import numpy as np
 import pytest
 from automol import Geometry
-from autostore import Database
+from autostore import Calculation, Database
 
 import autopilot
 
@@ -24,13 +24,24 @@ def database() -> Iterator[Database]:
 def water() -> Geometry:
     """Water geometry fixture."""
     return Geometry(
-        symbols=["O", "H", "H"], coordinates=[[0, 0, 0], [1, 0, 0], [0, 1, 0]]
+        symbols=["O", "H", "H"],
+        coordinates=[[0, 0, 0], [1, 0, 0], [0, 1, 0]],  # ty:ignore[invalid-argument-type]
     )
 
 
-def test_energy(water: Geometry, database: Database) -> None:
+@pytest.fixture
+def xtb_calculation() -> Calculation:
+    """XTB calculation fixture."""
+    return Calculation(program="crest", method="gfn2")
+
+
+def test_energy(
+    water: Geometry, xtb_calculation: Calculation, database: Database
+) -> None:
     """Test single-point energy calculation."""
-    energy = autopilot.energy(
-        water, prog="crest", args={"model": {"method": "gfn2"}}, db=database
-    )
+    energy = autopilot.energy(water, xtb_calculation, db=database)
+    assert np.isclose(energy, -5.062316802835694)
+
+    # Test retrieval from database
+    energy = autopilot.energy(water, xtb_calculation, db=database)
     assert np.isclose(energy, -5.062316802835694)

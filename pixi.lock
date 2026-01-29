@@ -14,8 +14,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-1.2.0-hed03a55_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/brotli-bin-1.2.0-hb03c661_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_8.conda
@@ -171,8 +171,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/_openmp_mutex-4.5-7_kmp_llvm.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-1.2.0-hf139dec_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/brotli-bin-1.2.0-h8616949_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-h500dc9f_8.conda
@@ -317,8 +317,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/_openmp_mutex-4.5-7_kmp_llvm.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-1.2.0-h7d5ae5b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/brotli-bin-1.2.0-hc919400_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-hd037594_8.conda
@@ -477,8 +477,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/astroid-3.3.11-py314hdafbbf9_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.3.0-py314h680f03e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.14.3-pyha770c72_0.conda
@@ -712,8 +712,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/appnope-0.1.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/astroid-3.3.11-py314hee6578b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.3.0-py314h680f03e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.14.3-pyha770c72_0.conda
@@ -935,8 +935,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/appnope-0.1.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/astroid-3.3.11-py314h4dc9dd8_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.3.0-py314h680f03e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.14.3-pyha770c72_0.conda
@@ -1167,8 +1167,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/astroid-3.3.11-py314hdafbbf9_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.3.0-py314h680f03e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.14.3-pyha770c72_0.conda
@@ -1404,8 +1404,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/appnope-0.1.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/astroid-3.3.11-py314hee6578b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.3.0-py314h680f03e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.14.3-pyha770c72_0.conda
@@ -1629,8 +1629,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/appnope-0.1.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/astroid-3.3.11-py314h4dc9dd8_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/babel-2.17.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.3.0-py314h680f03e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/beautifulsoup4-4.14.3-pyha770c72_0.conda
@@ -1998,28 +1998,28 @@ packages:
   timestamp: 1763410017955
 - pypi: ../autostore
   name: automech-autostore
-  version: 0.0.2
-  sha256: 01de9aa4fd2abcfd8fb06e29478ce6b2bee7895d97e83c4732718849d2e8bb52
+  version: 0.0.3
+  sha256: 94100dfd61feaf51230735a924677889ddb9237d0aa88f916cedfee0d2a9fce5
   requires_dist:
-  - automol>=0.0.1
+  - automol==0.0.5
   - pint>=0.25.2
   - qcio>=0.16.2
   - sqlmodel>=0.0.31
   requires_python: '>=3.12'
-- conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.2-pyh4616a5c_0.conda
-  sha256: 4d9a463f97de7bab920354de9124c3e9f2a1a70266a51aa8fda946fb348ceaf9
-  md5: b9e3154b05644c5a0175f74b129440cd
+- conda: https://conda.anaconda.org/avcopan/noarch/automech-autostore-0.0.3-pyh4616a5c_0.conda
+  sha256: 391b44472d2a08e7b433569077c85f0035a8d5f6f84655973d0dffa49489bf8d
+  md5: f885afd37429a7d04d2fad4d73800071
   depends:
   - python >=3.12
   - python *
   - pint >=0.25.2
   - sqlmodel >=0.0.31
-  size: 5934
-  timestamp: 1769629361369
+  size: 10454
+  timestamp: 1769724662589
 - pypi: ../automol
   name: automol
-  version: 0.0.1
-  sha256: 9dce9fef41439c7c4e8263a84c266b6db3a53f8b83f955d77b7c74e2c41da4b9
+  version: 0.0.5
+  sha256: cc4713e8fd744d37f26c3acca92181aff2ef4477c44f94690ca54f0b07581456
   requires_dist:
   - networkx>=3.3
   - numpy>=2.0
@@ -2029,9 +2029,9 @@ packages:
   - rdkit>=2025
   - scipy>=1.13
   requires_python: '>=3.12'
-- conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.1-pyh4616a5c_0.conda
-  sha256: 65767b0bccda8ab5dd904e1fe3afbea44c83eccbe4b4fa5fa6a7959a0642368f
-  md5: 810232e19c712d9cd1c266ec89241c9d
+- conda: https://conda.anaconda.org/avcopan/noarch/automol-0.0.5-pyh4616a5c_0.conda
+  sha256: 36a5adf42cbcf2b9fe872671191a04a9dae4e071c62e14270c107585b6fcf43a
+  md5: 1b71e2fd9349927ae2dfa8d5b74f4b71
   depends:
   - python >=3.12
   - python *
@@ -2042,8 +2042,8 @@ packages:
   - pydantic >=2.5
   - rdkit >=2025
   - scipy >=1.13
-  size: 8137
-  timestamp: 1769449372846
+  size: 8467
+  timestamp: 1769723232695
 - conda: .
   name: autopilot
   version: 0.0.0
