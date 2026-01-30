@@ -85,3 +85,8 @@ release = "tbump"
 # Setup and initialize this repository (only run once)
 setup = "./scripts/setup.sh"
 init = { cmd = "./scripts/init.sh", depends-on = ["setup"]}
+
+[feature.local.tasks]
+test-automol = "pytest ../automol/tests"
+test-autostore = "pytest ../autostore/tests"
+test-autopilot = "pytest tests"
