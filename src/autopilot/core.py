@@ -2,6 +2,7 @@
 
 from automol import Geometry
 from autostore import Calculation, Database, read, write
+from qcio import Structure
 
 from . import compute
 
@@ -43,3 +44,38 @@ def energy(
 
     write.energy(res, db)
     return res.data.energy
+
+
+def stationary_point(geo: Geometry, calc: Calculation, *, db: Database) -> Structure:
+    """
+    Compute stationary point structure.
+
+    Parameters
+    ----------
+    geo
+        Geometry.
+    calc
+        Calculation metadata.
+    db
+        Database connection manager.
+    hash_name
+        Calculation hash type.
+
+    Returns
+    -------
+        Final structure.
+
+    Raises
+    ------
+    RuntimeError
+        If the calculation fails.
+    """
+    res = compute.stationary_point(geo, calc)
+
+    if not res.success or res.data.final_structure is None:  # ty:ignore[unresolved-attribute]
+        msg = f"Calculation failed: {res.traceback}"
+        raise RuntimeError(msg)
+
+    write.stationary_point(res, db)
+
+    return res.data.final_structure  # ty:ignore[unresolved-attribute]

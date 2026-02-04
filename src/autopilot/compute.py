@@ -32,3 +32,29 @@ def energy(geo: Geometry, calc: Calculation) -> Results[ProgramInput, SinglePoin
     """
     inp = calc.to_qcio_program_input(geo, CalcType.energy)
     return qcop.compute(calc.program, inp)
+
+
+def stationary_point(
+    geo: Geometry, calc: Calculation
+) -> Results[ProgramInput, SinglePointData]:
+    """
+    Compute optimized structure.
+
+    Parameters
+    ----------
+    geo
+        Geometry.
+    calc
+        Calculation metadata.
+
+    Returns
+    -------
+        Energy in Hartree.
+
+    Raises
+    ------
+    RuntimeError
+        If the calculation fails.
+    """
+    inp = calc.to_qcio_program_input(geo, CalcType.optimization)
+    return qcop.compute(calc.program, inp)
