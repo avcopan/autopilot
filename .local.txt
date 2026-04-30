@@ -1,0 +1,2 @@
+automol = { path = "../automol", editable = true }
+autostorage = { path = "../autostorage", editable = true }

@@ -5,8 +5,8 @@ from collections.abc import Iterator
 import numpy as np
 import pytest
 from automol import Geometry
-from autostore import CalculationRow, Database
-from autostore.models import EnergyRow, GeometryRow, StationaryPointRow
+from autostorage import CalculationRow, Database
+from autostorage.models import EnergyRow, GeometryRow, StationaryPointRow
 from sqlmodel import select
 
 import autopilot

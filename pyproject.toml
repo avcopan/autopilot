@@ -4,8 +4,8 @@ version = "0.0.0"
 authors = [{name = "Andreas V. Copan", email = "avcopan@uga.edu"}]
 requires-python = ">= 3.12"
 dependencies = [
-    "automol==0.0.7",
-    "automech-autostore==0.0.5",
+    "automol==0.0.10",
+    "autostorage==0.0.7",
     "geometric>=1.1",
     "qcdata>=0.17.0",
     "qccompute>=0.13.0",
@@ -66,7 +66,7 @@ addopts = [
     "--doctest-modules",
     "--cov=autopilot",
     "--cov-report=term-missing",
-    "--cov-report=xml",
+    "--cov-report=html",
 ]
 doctest_optionflags = "NORMALIZE_WHITESPACE"
 

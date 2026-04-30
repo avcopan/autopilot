@@ -5,8 +5,8 @@ preview = ["pixi-build"]
 
 [dependencies]
 autopilot = { path = "." }
-automol = "==0.0.7"
-automech-autostore = "==0.0.5"
+automol = "==0.0.10"
+autostorage = "==0.0.7"
 crest = ">=3.0.2"
 xtb = ">=6.7.1"
 libgfortran = ">=14,<15"
@@ -39,30 +39,31 @@ rattler-build = "*"
 tbump = "*"
 ipykernel = "*"
 
+[feature.dev.pypi-dependencies]
+keepachangelog = "*"
+qcdata = { version = ">=0.17.0, <0.18", extras = ["view"] }
+# local dependencies placeholder
+
+[feature.dev.pypi-options.dependency-overrides]
+# local dependencies placeholder
+
 [feature.docs.dependencies]
 sphinx = "*"
 myst-parser = "*"
 pydata-sphinx-theme = "*"
 sphinx-autodoc2 = "*"
 
-[feature.local.pypi-dependencies]
-automol = { path = "../automol", editable = true }
-automech-autostore = { path = "../autostore", editable = true }
-
-[feature.local.pypi-options.dependency-overrides]
-automol = { path = "../automol", editable = true }
-automech-autostore = { path = "../autostore", editable = true }
-
 [environments]
 default = { solve-group = "default" }
 dev = { features = ["dev", "docs"], solve-group = "default"}
-dev-local = { features = ["dev", "docs", "local"] }
 
 [feature.dev.tasks]
 # Manage pyproject.toml with uv
 uv = "uv"
 add = "uv add"
 remove = "uv remove"
+# Local dependency management (see scripts/local.sh)
+local = "./scripts/local.sh"
 # Individual tasks for pre-commit hooks (must be added to lefthook.yaml)
 fmt = "ruff format ."
 lint = "ruff check . --fix"
@@ -70,7 +71,10 @@ types = "ty check"
 imports = "lint-imports"
 test = "pytest"
 # Run pre-commit hooks (see lefthook.yaml)
-pre-commit = "lefthook run pre-commit --all-files --fail-on-changes"
+pre-commit = "lefthook run pre-commit --all-files"
+local-pre-commit = "lefthook run local-pre-commit --all-files"
+# View coverage report
+cov-view = "\"$BROWSER\" htmlcov/index.html"
 # Build and view documentation
 docs-build = "sphinx-build docs/source docs/build"
 docs-view = { cmd = "scripts/view-docs.sh", depends-on = ["docs-build"] }
@@ -83,15 +87,8 @@ publish-pypi = "uv publish"
 publish-test-pypi = "uv publish --publish-url https://test.pypi.org/legacy/"
 # Initiate release
 version = "tbump current-version"
+changelog = { cmd = "keepachangelog release {{ version }}", args=["version"] }
 release = "tbump"
 # Setup and initialize this repository (only run once)
 setup = "./scripts/setup.sh"
 init = { cmd = "./scripts/init.sh", depends-on = ["setup"]}
-
-[feature.dev.pypi-dependencies]
-qcdata = { version = ">=0.17.0, <0.18", extras = ["view"] }
-
-[feature.local.tasks]
-test-automol = "pytest ../automol/tests"
-test-autostore = "pytest ../autostore/tests"
-test-autopilot = "pytest tests"

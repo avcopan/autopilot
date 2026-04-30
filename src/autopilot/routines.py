@@ -1,11 +1,6 @@
 """Higher-level qc routines."""
 
-from automol import Geometry, geom
-from autostore import Calculation
-from qccompute import compute
-from qcdata import CalcType
 
-from .types import ScanParameters
 
 
 # def scan(*, calc: Calculation, geo: Geometry, pars: ScanParameters) -> ScanData:
