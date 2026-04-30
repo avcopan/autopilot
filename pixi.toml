@@ -5,14 +5,16 @@ preview = ["pixi-build"]
 
 [dependencies]
 autopilot = { path = "." }
-automol = "==0.0.5"
-automech-autostore = "==0.0.3"
+automol = "==0.0.7"
+automech-autostore = "==0.0.5"
 crest = ">=3.0.2"
 xtb = ">=6.7.1"
+libgfortran = ">=14,<15"
+ipykernel = ">=7.2.0,<8"
 
 [pypi-dependencies]
-qcio = "*"
-qcop = "*"
+qcdata = ">=0.17.0, <0.18"
+qccompute = ">=0.13.0, <0.14"
 
 [package]
 name = "autopilot"
@@ -28,7 +30,7 @@ ignore-pypi-mapping = false
 [feature.dev.dependencies]
 uv = "*"
 ruff = "*"
-ty = "*"
+ty = "==0.0.31"
 import-linter = "*"
 pytest = "*"
 pytest-cov = "*"
@@ -85,3 +87,11 @@ release = "tbump"
 # Setup and initialize this repository (only run once)
 setup = "./scripts/setup.sh"
 init = { cmd = "./scripts/init.sh", depends-on = ["setup"]}
+
+[feature.dev.pypi-dependencies]
+qcdata = { version = ">=0.17.0, <0.18", extras = ["view"] }
+
+[feature.local.tasks]
+test-automol = "pytest ../automol/tests"
+test-autostore = "pytest ../autostore/tests"
+test-autopilot = "pytest tests"
